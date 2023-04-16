@@ -15,6 +15,7 @@ namespace BasicFunctionProgram
 
             switch (input)
             {
+                //to flip a coin 
                 case "1":
                     Flip flip = new Flip();
                     flip.FlipCoin();
