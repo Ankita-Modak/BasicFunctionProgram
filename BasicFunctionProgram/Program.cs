@@ -3,7 +3,7 @@ using BasicFunctionProgram.Even_Odd;
 using BasicFunctionProgram.FC1;
 using BasicFunctionProgram.LY;
 using BasicFunctionProgram.Swap;
-
+using BasicFunctionProgram.VowelOrConsonent;
 
 namespace BasicFunctionProgram
 {
@@ -16,6 +16,7 @@ namespace BasicFunctionProgram
             Console.WriteLine("2. Check if a year is a Leap Year");
             Console.WriteLine("3. Check if number is even or odd");
             Console.WriteLine("4. Swap two Numbers");
+            Console.WriteLine("5. Check if Alphabet is vowel or consonent");
 
             string input = Console.ReadLine();
 
@@ -40,6 +41,11 @@ namespace BasicFunctionProgram
                case "4":
                     SwapTwoNum swap = new SwapTwoNum();
                     swap.Swapnum();
+                    break;
+
+                case "5":
+                    VowelConsonent vowelConsonent = new VowelConsonent();
+                    vowelConsonent.VowCos();
                     break;
 
 
