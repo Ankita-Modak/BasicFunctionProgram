@@ -1,5 +1,6 @@
 ﻿using System;
 using BasicFunctionProgram.FC1;
+using BasicFunctionProgram.LY;
 
 namespace BasicFunctionProgram
 {
@@ -21,7 +22,8 @@ namespace BasicFunctionProgram
                     flip.FlipCoin();
                     break;
                 case "2":
-                    //CheckLeapYear();
+                    LeapYear leap = new LeapYear();
+                    leap.CheckLeapYear();
                     break;
                 default:
                     Console.WriteLine("Invalid input. Please select either 1 or 2.");
